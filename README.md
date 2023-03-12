@@ -148,21 +148,9 @@ Wedding101은 예비부부를 향한 축하를 사진과 영상으로 담아 디
 - Material UI
 - Node.js 18.13.0
 
-**IoT**
-
-- PyCharm IDE
-- Raspberry Pi 4 model B
-- PySide6 + 2
-
 **Design**
 
 - Figma
-
-**CI/CD**
-
-- AWS EC2
-- Jenkins
-- Nginx
 
 ## 📔 프로젝트 파일구조
 
@@ -194,45 +182,6 @@ BE
 └─test
 ```
 
-### Front
-
-```
-FE
-├─node_modules
-├─public
-└─src
-    ├─api
-    ├─assets
-    │  └─img
-    ├─components
-    │  ├─album
-    │  ├─board
-    │  ├─common
-    │  ├─main
-    │  ├─serviceProcess
-    │  ├─user
-    │  │  ├─UserLogin
-    │  │  ├─UserModify
-    │  │  └─UserRegist
-    │  └─WeddingInvitation
-    │      └─InfoModify
-    ├─data
-    ├─modules
-    ├─pages
-    │  ├─Album
-    │  ├─BoardQuestion
-    │  ├─BoardReview
-    │  ├─Main
-    │  ├─ServiceProcess
-    │  ├─User
-    │  │  ├─UserLogin
-    │  │  ├─UserMyPage
-    │  │  └─UserRegist
-    │  └─WeddingInvitation
-    ├─test
-    └─utils
-
-```
 
 ## 🔈 협업 툴
 
@@ -255,6 +204,7 @@ FE
 ### Web - FrontEnd
 
 - 류제엽
+- 김지현
 
 ### IoT
 
@@ -293,13 +243,6 @@ FE
   <img src="https://user-images.githubusercontent.com/79901413/220556077-2c87b77f-1d23-416b-acd9-168a826a825f.gif" title="마이페이지" width="70%" height="70%"/>
   <br />
 
-### 메인화면
-
-- 서비스 개요를 소개합니다.
-- 전체 페이지 스크롤을 통해 구현하였습니다.
-  <br />
-  <img src="https://user-images.githubusercontent.com/79901413/220556080-23ba88c8-20e7-47a5-bb5b-f295c132a962.gif" title="메인화면" width="70%" height="70%"/>
-  <br />
 
 ### 서비스 신청
 
@@ -309,19 +252,6 @@ FE
   <img src="https://user-images.githubusercontent.com/79901413/220556087-eedbe859-6092-4938-a2eb-b683ec1e7999.gif" title="서비스신청-2" width="70%" height="70%"/>
   <img src="https://user-images.githubusercontent.com/79901413/220556090-a495d526-cc97-487b-ade3-fefeafea34ae.gif" title="서비스신청-3,4" width="70%" height="70%"/>
   <br />
-
-### 방명로그
-
-- 소형 포토 영상 부스를 통해 영상 기반 방명록을 작성할 수 있습니다.
-- 신랑 신부는 웹 상으로 하객이 남기는 실시간 축하 영상을 확인할 수 있습니다.
-  <br/>
-  <img src="https://user-images.githubusercontent.com/48194000/219672037-1fbacaa7-1318-450c-8237-728c3b7e8661.gif" title="웹 앨범" width="70%" height="70%"/>
-  <br/>
-- 두 가지 모드
-  1. 폴라로이드 모드
-     - 사진을 찍고 손 글씨를 남기면 폴라로이드로 합쳐 웹 앨범 페이지로 전송합니다.
-  2. 방명로그 모드
-     - 동영상을 통해 결혼 축하영상을 찍고 웹 앨범 페이지로 전송합니다.
 
 ### 모바일 청첩장
 
@@ -355,21 +285,13 @@ FE
   <img src="https://user-images.githubusercontent.com/79901413/220556068-42a29c08-3694-4a76-8ae7-e772bc926cd5.gif" title="리뷰" width="70%" height="70%"/>
   <br />
 
-<details>
-<summary>Jenkins Connection Test</summary>
-<div markdown="1">
 
-```
-1. iot branch modify
-2. update (add -> commit -> push)
-3. merge branch from iot to develop
+## 배운점 & 느낀점
 
-then,
-jenkins should detect somethings has been merged,
-and should rebuild and test.
-```
+- Spring Data JPA
+- React.js
 
-before setting the pipeline on the jenkins
-
-</div>
-</details>
+> Spring Data JPA를 학습하고 코드를 작성하면서, 데이터베이스 연동 작업을 수월하게 진행할 수 있었습니다. 이 덕분에 비즈니스 로직에 대해 고민할 시간이 생겼고, 코드를 작성하며 확장성 재사용성을 고려하며 작성하고자 했습니다.
+또한, IoT 팀원들과 프로젝트를 진행하며 소통의 중요성을 깨달았고 디테일한 기획과 문서 작성으로 원활한 소통을 하고자 했습니다.
+좋은 팀원을 만나 논리적인 소통을 진행하며 프로젝트를 진행한 경험은 앞으로의 프로젝트를 진행하며 어떻게 소통하는 것이 서로에게 좋은지 생각해보게 되는 좋은 경험이 될 것입니다.
+>
